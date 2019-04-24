@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+    <import resource="classpath:nso-db-datasource.xml"/>
+    <context:component-scan base-package="ge.koaladev.msy.nso.core"/>
+
+
+    <bean id="corePropertyPlaceholderConfigurer"
+          class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="ignoreUnresolvablePlaceholders" value="true"/>
+        <property name="ignoreResourceNotFound" value="true"/>
+        <property name="locations">
+            <list>
+                <value>classpath:nso-core.properties</value>
+                <value>file:///opt/nso/config/nso-core.properties</value>
+            </list>
+        </property>
+    </bean>
+
+
+    <bean name="fileService" class="ge.koaladev.msy.nso.core.services.file.FileService">
+        <property name="rootDir" value="${file.root.dir}"/>
+    </bean>
+
+    <bean name="sendEmailWithAttachment" class="ge.koaladev.utils.email.SendEmailWithAttachmentFactory">
+        <property name="host" value="${mail.smtp.host}"/>
+        <property name="port" value="${mail.smtp.port}"/>
+        <property name="auth" value="${mail.smtp.auth}"/>
+        <property name="starttls" value="${mail.smtp.starttls}"/>
+        <property name="from" value="${mail.from}"/>
+        <property name="username" value="${mail.username}"/>
+        <property name="password" value="${mail.password}"/>
+    </bean>
+
+    <bean name="smsService" class="ge.koaladev.msy.nso.core.services.SmsService">
+        <property name="smsBodyPrefix" value="${sms.body.prefix}"/>
+        <property name="smsEndpointEmail" value="${sms.endpoint.email}"/>
+
+    </bean>
+
+</beans>

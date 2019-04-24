@@ -1,0 +1,186 @@
+html {
+    overflow: scroll;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px !important;
+    font-family: dejavu !important;
+}
+
+.table {
+    font-size: 11px !important;
+}
+
+.sidebar {
+    font-family: dejavu !important;
+}
+
+.sidebar .nav-tabs {
+    padding: 7px 2px !important;
+}
+
+body.auth_bg {
+    background-color: #f3f3f0 !important;
+}
+
+@font-face {
+    font-family: upper-font;
+    src: url(../fonts/bpg_nino_elite_exp_caps.otf);
+}
+
+.left-menu .list-group a {
+    font-size: 14px !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clear {
+    clear: both;
+}
+
+#logo {
+    background: url('../imgs/sport-logo.png') no-repeat center;
+    width: 120px;
+    height: 105px;
+    background-size: cover;
+}
+
+#slogan {
+    background: url('../imgs/title-sport.png') no-repeat center;
+    width: 555px;
+    height: 105px;
+}
+
+.upper-font {
+    font-family: upper-font;
+}
+
+@font-face {
+    font-family: 'dejavu';
+    src: url('../fonts/bpg_dejavu_sans.eot');
+    src: url('../fonts/bpg_dejavu_sans.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+#auth.btn-xs {
+    padding-top: 5px;
+    padding-bottom: 3px;
+    background-color: #0d55cb;
+}
+
+.navbar {
+    background-color: rgb(59, 120, 231);
+    margin-bottom: 0;
+}
+
+.left-menu {
+    border-right: 1.1px solid #d3d3d3;
+    min-height: 800px;
+    height: auto;
+}
+
+.left-menu .list-group-item {
+    border: none;
+}
+
+.border-bottom-gray {
+    border-bottom: 1.1px solid #d3d3d3;
+}
+
+#selected_item {
+    min-height: 22px;
+}
+
+/*
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    background-color: #0d55cb;
+}
+
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+    background-color: rgba(59, 120, 231, 0.2);
+    color: rgb(59, 120, 231);
+}
+*/
+
+.btn-span {
+    cursor: pointer;
+}
+
+#auth {
+    width: 295px;
+    height: 36px;
+}
+
+.loading-mask {
+    position: relative;
+}
+
+.loading-mask:before {
+    content: ' ' !important;
+    display: block !important;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, .5) url(../imgs/spinner.gif) center center no-repeat;
+    background-size: 32px;
+    z-index: 500000;
+}
+
+.modal-header {
+    font-size: 15px;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+
+.bootstrap-select .dropdown-toggle {
+    display: none;
+}
+
+.datepicker.datepicker-dropdown.dropdown-menu {
+    right: auto !important;
+}
+
+.btn-neutral-purple {
+    background-color: #fff !important;
+    color: #673AB7 !important;
+}
+
+.datepicker-days table {
+    font-size: 12px;
+}
+
+.datepicker table tr td.active:hover, .datepicker table tr td.active:hover:hover, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active.disabled:hover:hover, .datepicker table tr td.active:active, .datepicker table tr td.active:hover:active, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.active, .datepicker table tr td.active:hover.active, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled:hover.active, .datepicker table tr td.active.disabled, .datepicker table tr td.active:hover.disabled, .datepicker table tr td.active.disabled.disabled, .datepicker table tr td.active.disabled:hover.disabled, .datepicker table tr td.active[disabled], .datepicker table tr td.active:hover[disabled], .datepicker table tr td.active.disabled[disabled], .datepicker table tr td.active.disabled:hover[disabled] {
+    background: #8c99e0 !important;
+}
+
+.text-purple {
+    color: #673AB7 !important;
+}
+
+.badge-purple {
+    border-color: #673AB7 !important;
+    color: #673AB7 !important;
+}
+
+select.form-control {
+    border-radius: 5px;
+}
+
+#calendar-select .select2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.nav-tabs > .nav-item > .nav-link {
+    font-size: 12px !important;
+}

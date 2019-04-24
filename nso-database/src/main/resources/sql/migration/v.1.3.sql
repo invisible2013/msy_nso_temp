@@ -1,0 +1,1 @@
+alter table person add column image_thumbnail_url character varying;
